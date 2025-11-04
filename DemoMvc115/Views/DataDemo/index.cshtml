@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Buổi 4 - Demo ViewBag, ViewData, TempData";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h2>Ví dụ truyền dữ liệu từ Controller → View</h2>
+
+<ul>
+    <li><strong>ViewBag:</strong> @ViewBag.Message</li>
+    <li><strong>ViewData:</strong> @ViewData["Note"]</li>
+    <li><strong>TempData:</strong> @TempData["Temp"]</li>
+</ul>
+
+<p><a href="/DataDemo/ShowTemp">Xem thử TempData ở request tiếp theo</a></p>

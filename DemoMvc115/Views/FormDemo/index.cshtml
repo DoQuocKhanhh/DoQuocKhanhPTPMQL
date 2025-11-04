@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Buổi 4 - Gửi & Nhận dữ liệu giữa Controller và View";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Index" method="post">
+    <div>
+        <label>Họ tên:</label>
+        <input type="text" name="name" required />
+    </div>
+    <div>
+        <label>Tuổi:</label>
+        <input type="number" name="age" required />
+    </div>
+    <button type="submit">Gửi dữ liệu</button>
+</form>
+
+@if (ViewBag.Result != null)
+{
+    <h3 style="color:green">@ViewBag.Result</h3>
+}

@@ -1,0 +1,23 @@
+@model DemoMvc115.Models.Student
+
+<h1>Nhập thông tin sinh viên</h1>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Mã SV:</label>
+        <input asp-for="MaSV" required />
+    </div>
+    <div>
+        <label>Họ tên:</label>
+        <input asp-for="HoTen" required />
+    </div>
+    <div>
+        <label>Tuổi:</label>
+        <input asp-for="Tuoi" type="number" required />
+    </div>
+    <div>
+        <label>Lớp:</label>
+        <input asp-for="Lop" required />
+    </div>
+    <button type="submit">Gửi</button>
+</form>
