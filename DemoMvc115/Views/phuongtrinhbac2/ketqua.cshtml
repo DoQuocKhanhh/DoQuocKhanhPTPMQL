@@ -1,0 +1,23 @@
+@{
+    ViewBag.Title = "Giải phương trình bậc 2";
+}
+
+<h2>Giải phương trình bậc 2: ax² + bx + c = 0</h2>
+
+<form method="post" action="/Home/GiaiPTB2">
+    <label>a:</label>
+    <input type="number" name="a" step="any" required /><br><br>
+
+    <label>b:</label>
+    <input type="number" name="b" step="any" required /><br><br>
+
+    <label>c:</label>
+    <input type="number" name="c" step="any" required /><br><br>
+
+    <button type="submit">Giải</button>
+</form>
+
+@if (ViewBag.KetQua != null)
+{
+    <h3>Kết quả: @ViewBag.KetQua</h3>
+}
